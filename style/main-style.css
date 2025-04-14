@@ -201,7 +201,8 @@ footer nav a p:nth-child(2){
     textarea {
         height: 80%;
         font-size: 16px;
-        padding: 15px
+        padding: 15px;
+        resize: none;
     }
 
     label {
@@ -243,6 +244,20 @@ label {
     margin-bottom: .5rem;
 }
 
+ @media only screen and (min-width: 1024px) {
+    .profile-header-body {
+        width: 33%;
+        margin: 0 auto;
+    }
+
+    .green-button {
+        width: 30%;
+    }
+
+    .arrow_black {
+        
+    }
+}
 
 /* #endregion  */
 

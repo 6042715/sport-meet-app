@@ -1,3 +1,21 @@
+<?php
+session_start();
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if (!empty($_POST['sports'])) {
+        // Convert selected sports array to comma-separated string
+        $selectedSports = implode(', ', $_POST['sports']);
+
+        // Store it in session
+        $_SESSION['profile']['sports'] = $selectedSports;
+
+        // Redirect or continue to next step
+        header('Location: profile.php'); /* FIXME: link to homepage */
+        exit();
+    } 
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

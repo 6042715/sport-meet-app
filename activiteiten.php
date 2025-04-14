@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Activities</title>
     <link rel="stylesheet" href="style/main-style.css">
 </head>
+
 <body>
-    <header></header>
-    <main></main>
-    <?php
-    include_once("templates/footer.php");
-    ?> 
+<header>
+</header>
+<main>
+</main>
+<?php
+include_once("templates/footer.php");
+?> 
+
 </body>
-</html> 
+</html>

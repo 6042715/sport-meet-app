@@ -54,6 +54,7 @@ footer nav a p:nth-child(2){
     font-size: 16px;
     line-height: 24px;
     background-color: var(--background-color);
+    max-height: 100vh;
 }
 .profile-header {
     display: flex;

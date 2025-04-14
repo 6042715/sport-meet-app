@@ -14,19 +14,50 @@
     <main>
         <section class="create-profile-container">
             <h1 class="header-create-profile">Choose your sports</h1>
+            <form class="sport-options" method="post">
+                <label class="sport-options_label">
+                    <input type="checkbox" name="sports" value="running" />
+                    Running
+                </label>
 
-            <article class="sport-options">
-                <button class="sport-options_button" value="running">Running</button>
-                <button class="sport-options_button" value="cycling">Cycling</button>
-                <button class="sport-options_button" value="tennis">Tennis</button>
-                <button class="sport-options_button" value="gym">Gym</button>
-                <button class="sport-options_button" value="running">Swimming</button>
-                <button class="sport-options_button" value="cycling">Short Walks</button>
-                <button class="sport-options_button" value="tennis">Basketball</button>
-                <button class="sport-options_button" value="gym">Ballet</button>
-            </article>
+                <label class="sport-options_label">
+                    <input type="checkbox" name="sports" value="cycling" />
+                    Cycling
+                </label>
 
-            <a href="#" class="green-button">Continue</a>
+                <label class="sport-options_label">
+                    <input type="checkbox" name="sports" value="tennis" />
+                    Tennis
+                </label>
+
+                <label class="sport-options_label">
+                    <input type="checkbox" name="sports" value="gym" />
+                    Gym
+                </label>
+
+                <label class="sport-options_label">
+                    <input type="checkbox" name="sports" value="swimming" />
+                    Swimming
+                </label>
+
+                <label class="sport-options_label">
+                    <input type="checkbox" name="sports" value="short-walks" />
+                    Short Walks
+                </label>
+
+                <label class="sport-options_label">
+                    <input type="checkbox" name="sports" value="basketball" />
+                    Basketball
+                </label>
+
+                <label class="sport-options_label">
+                    <input type="checkbox" name="sports" value="ballet" />
+                    Ballet
+                </label>
+            </form>
+            
+
+            <button type="submit" href="#" class="green-button">Continue</button>
         </section>
     </main>
 </body>

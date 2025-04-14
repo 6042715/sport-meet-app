@@ -45,11 +45,11 @@ footer nav a p:nth-child(2){
     margin-top: 0.3vh;
 }
 
-/* #region -------- Create Profile ------- */
+/* #region -------- Create Profile/Choose Sport ------- */
 .profile-header-body {
     font-family: var(--font);
     min-height: 100vh;
-    /* margin: 0 0px; */
+    margin: 0 10px;
     font-size: 16px;
     line-height: 24px;
     background-color: var(--background-color);
@@ -99,7 +99,7 @@ footer nav a p:nth-child(2){
 
 }
 
-.sport-options_button { 
+.sport-options_label { 
     border: none;
     background-color: var(--button-chat);
     padding: 16px 14px;
@@ -107,9 +107,22 @@ footer nav a p:nth-child(2){
     font-weight: 500;
     width: 40%;
     height: auto;
+    text-align: center;
 
     border-radius: var(--button-radius);
 }
+
+.sport-options_label:has(input:checked) {
+    background-color: var(--main-blue);
+    color: white;
+    border-color: var(--main-blue);
+  }
+
+
+.sport-options_label input[type="checkbox"] {
+    display: none;
+  }
+  
 
 .green-button {
     height: 55px;
@@ -126,6 +139,7 @@ footer nav a p:nth-child(2){
 
     bottom: 50px;
     position: absolute;
+    border: none;
 }
 /* #endregion  */
 

@@ -39,7 +39,8 @@ footer nav a p:nth-child(2){
     margin-top: 0.3vh;
 }
 
-/* Index styles */
+/* Welkom screen styles */
+
 
 /* Reset default browser margins and padding */
 * {
@@ -54,11 +55,11 @@ body, html {
     overflow-x: hidden;
 }
 
-/* Main container styled for website and mobile */
-.app-container {
+/* Main container styles */
+#welcome-screen .app-container {
     width: 100%;
     min-height: 100vh;
-    background-color: #FF8C00; /* Orange background */
+    background-color: #FF8C00; /* Oranje background */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -68,7 +69,7 @@ body, html {
 }
 
 /* Logo styles */
-.logo {
+#welcome-screen .logo {
     background-color: white;
     width: 80px;
     height: 80px;
@@ -80,23 +81,23 @@ body, html {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Icon styles voor logo */
-.icon {
+/* Icon logo styles */
+#welcome-screen .icon {
     color: #FF8C00;
     font-size: 40px;
     font-weight: bold;
 }
 
-/* Heading styles */
-h1 {
+/* Heading styles - welcome-screen */
+#welcome-screen h1 {
     color: white;
     font-size: 36px;
     margin-bottom: 20px;
     font-weight: 700;
 }
 
-/* Subtitle styles */
-p {
+/* Subtitle styles - welcome-screen */
+#welcome-screen p {
     color: white;
     font-size: 18px;
     margin-bottom: 50px;
@@ -105,8 +106,8 @@ p {
 }
 
 /* Button styles */
-.start-button {
-    background-color: #4CAF50; /* groene button */
+#welcome-screen .start-button {
+    background-color: #4CAF50; /* Groene button */
     color: white;
     border: none;
     border-radius: 30px;
@@ -120,59 +121,59 @@ p {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Button hover */
-.start-button:hover {
+/* Button hover effect */
+#welcome-screen .start-button:hover {
     background-color: #45a049;
     transform: translateY(-2px);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* Button active effect */
-.start-button:active {
+#welcome-screen .start-button:active {
     transform: translateY(1px);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
-/* Media Queries voor verschilende soorten schermen */
+/* Media Queries for different screen sizes */
 
-/* Grote desktop screens */
+/* Grote desktop schermen */
 @media screen and (min-width: 1200px) {
-    .app-container {
+    #welcome-screen .app-container {
         padding: 60px;
     }
     
-    .logo {
+    #welcome-screen .logo {
         width: 100px;
         height: 100px;
     }
     
-    .icon {
+    #welcome-screen .icon {
         font-size: 50px;
     }
     
-    h1 {
+    #welcome-screen h1 {
         font-size: 42px;
     }
     
-    p {
+    #welcome-screen p {
         font-size: 20px;
         max-width: 700px;
     }
     
-    .start-button {
+    #welcome-screen .start-button {
         width: 300px;
         padding: 18px 50px;
         font-size: 20px;
     }
 }
 
-/* Tablets en kleiner desktops */
+/* Tablets en kleine desktops */
 @media screen and (max-width: 991px) {
-    h1 {
+    #welcome-screen h1 {
         font-size: 32px;
     }
     
-    p {
+    #welcome-screen p {
         font-size: 17px;
         max-width: 500px;
     }
@@ -180,83 +181,83 @@ p {
 
 /* Mobile landscape en kleine tablets */
 @media screen and (max-width: 767px) {
-    .app-container {
+    #welcome-screen .app-container {
         padding: 30px 15px;
     }
     
-    .logo {
+    #welcome-screen .logo {
         width: 70px;
         height: 70px;
         margin-bottom: 25px;
     }
     
-    .icon {
+    #welcome-screen .icon {
         font-size: 35px;
     }
     
-    h1 {
+    #welcome-screen h1 {
         font-size: 28px;
         margin-bottom: 15px;
     }
     
-    p {
+    #welcome-screen p {
         font-size: 16px;
         margin-bottom: 40px;
     }
     
-    .start-button {
+    #welcome-screen .start-button {
         width: 220px;
         padding: 14px 30px;
         font-size: 16px;
     }
 }
 
-/* Kleine mobiles phones */
+/* Kleine mobiles */
 @media screen and (max-width: 480px) {
-    .logo {
+    #welcome-screen .logo {
         width: 60px;
         height: 60px;
         margin-bottom: 20px;
     }
     
-    .icon {
+    #welcome-screen .icon {
         font-size: 30px;
     }
     
-    h1 {
+    #welcome-screen h1 {
         font-size: 24px;
     }
     
-    p {
+    #welcome-screen p {
         font-size: 15px;
         margin-bottom: 35px;
     }
     
-    .start-button {
+    #welcome-screen .start-button {
         width: 200px;
         padding: 12px 25px;
         font-size: 15px;
     }
 }
 
-/* Heel Kleine schermen */
+/* Heel kleine schermen*/
 @media screen and (max-width: 320px) {
-    h1 {
+    #welcome-screen h1 {
         font-size: 22px;
     }
     
-    p {
+    #welcome-screen p {
         font-size: 14px;
     }
     
-    .start-button {
+    #welcome-screen .start-button {
         width: 180px;
     }
 }
 
-/* Grote mobile scherm/ tall phone screens */
+/* Hele lange mobiles */
 @media screen and (min-height: 700px) and (max-width: 480px) {
-    .app-container {
+    #welcome-screen .app-container {
         justify-content: center;
     }
 }

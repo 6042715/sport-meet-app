@@ -8,11 +8,11 @@
 </head>
 <body>
     <header>
-        <!-- Header content voor later -->
+        <!-- Header content can be added later -->
     </header>
-    <main>
+    <main id="welcome-screen">
         <div class="app-container">
-            <!-- Logo circle icon -->
+            <!-- Logo circle with icon -->
             <div class="logo">
                 <span class="icon">⚡</span>
             </div>

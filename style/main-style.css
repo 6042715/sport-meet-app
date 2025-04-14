@@ -242,6 +242,7 @@ label {
     font-weight: 500;
     display: inline-block;
     margin-bottom: .5rem;
+    transition: .1s ease-in-out;
 }
 
  @media only screen and (min-width: 1024px) {
@@ -252,11 +253,25 @@ label {
 
     .green-button {
         width: 30%;
+        transition: .4s ease-in-out;
+
+        &:hover {
+            background-color: #45a049;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        &:active {
+            transform: translateY(1px);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
     }
 
-    .arrow_black {
-        
+    .sport-options_label:hover {
+        background-color: #d1d9f3;
+     
     }
+    
 }
 
 /* #endregion  */

@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     <main class="create-profile-container">
         <h1 class="header-create-profile">Choose your sports</h1>
-        <form class="sport-options" method="post" action="#">
+        <form class="sport-options" method="post"> 
             <label class="sport-options_label">
                 <input type="checkbox" name="sports[]" value="running" />
                 Running

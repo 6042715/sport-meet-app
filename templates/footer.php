@@ -6,7 +6,7 @@
         </a>
         <a id="calendar">
             <p>📅</p>
-            <p>events</p>
+            <p>activities</p>
         </a>
         <a id="chat">
             <p>💬</p>

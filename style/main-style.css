@@ -1,6 +1,8 @@
 
 :root {
     --main-blue: #6682ec;
+    --main-blue-desktop: #7a94f5;
+    /* --main-blue: #ffa667; */
     --button-main: #72cb73;
     --button-chat: #e4e1e8;
     --chat-message-bg: #fbf4f7;
@@ -58,7 +60,7 @@ footer nav a p:nth-child(2){
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
-    height: 100vh;
+    max-height: 100vh;
     max-width: 100vw;
 }
 
@@ -89,7 +91,7 @@ footer nav a p:nth-child(2){
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    margin-top: 30px;
+    margin-top: 64px;
      
     h1 {
         margin-bottom: 25px;
@@ -115,6 +117,7 @@ footer nav a p:nth-child(2){
     width: 40%;
     height: auto;
     text-align: center;
+    transition: .1s ease-in;
 
     border-radius: var(--button-radius);
     user-select: none;
@@ -122,9 +125,9 @@ footer nav a p:nth-child(2){
 }
 
 .sport-options_label:has(input:checked) {
-    background-color: var(--main-blue);
+    background: var(--main-blue-desktop);
     color: white;
-    border-color: var(--main-blue);
+    border-color: var(--main-blue-desktop);
   }
 
 
@@ -177,7 +180,7 @@ footer nav a p:nth-child(2){
 }
 
 .create-profile-2 {
-    margin: 10px auto;
+    margin: 50px auto;
     border-radius: var(--button-radius);
 }
 .create-profile-input-wrap {
@@ -254,7 +257,13 @@ footer nav a p:nth-child(2){
     z-index: -1;
 }
 
-
+@media only screen and (max-width: 1023px) {
+    .sport-options_label:has(input:checked) {
+        background: var(--main-blue);
+        color: white;
+        border-color: var(--main-blue);
+      }
+}
  @media only screen and (min-width: 1024px) {
     
     .profile-header-body {
@@ -289,7 +298,7 @@ footer nav a p:nth-child(2){
 
     .green-button {
         position: relative;
-        transition: .4s ease-in-out;
+        transition: .15s ease-in-out;
         bottom: 0;
 
         &:hover {

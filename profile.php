@@ -80,8 +80,18 @@ if (isset($_SESSION['profile'])) {
           </article>
         </section>
 
+        <section class="statsProfiel">
+          <article>
+            <h2>Recent sportevents</h2>
+          </article>
+
+          <article class="activeProfiel">
+            <p>Look here for all your previous sportevents <img id="pijlRechts" src="lib/icons/arrow_back.svg" alt=""></p>
+          </article>
+        </section>
+
         <section class="evenementSign">
-          <a href="#">Sign up for evenement</a>
+          <a href="#">Sign up for sportevents</a>
         </section>
     </main>
 

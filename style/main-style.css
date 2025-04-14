@@ -49,12 +49,12 @@ footer nav a p:nth-child(2){
 /* #region -------- Create Profile/Choose Sport ------- */
 .profile-header-body {
     font-family: var(--font);
-    min-height: 100vh;
     padding: 15px;
     font-size: 16px;
     line-height: 24px;
     background-color: var(--background-color);
     max-height: 100vh;
+    overflow: hidden;
 }
 .profile-header {
     display: flex;
@@ -147,7 +147,7 @@ footer nav a p:nth-child(2){
 .create-profile {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     width: 100%;
     place-items: center;
 
@@ -196,7 +196,7 @@ footer nav a p:nth-child(2){
 
 .about-me {
     height: 70%;
-    grid-area: 5/1/7/2;
+    grid-area: 4/1/6/2;
 
     textarea {
         height: 80%;

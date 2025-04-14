@@ -9,7 +9,7 @@
 <body class="profile-header-body">
     
     <header class="profile-header">
-        <a href="createProfile.html"><img src="lib\icons\arrow_back.svg" alt="" class="arrow_black"></a>
+        <a href="createProfile.php"><img src="lib/icons/arrow_back.svg" alt="" class="arrow_black"></a>
         <p class="small-header-create-profile">Create a Profile</p>
     </header>
 

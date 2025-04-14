@@ -16,6 +16,7 @@
 body {
     background-color: var(--background-color);
 }
+
 footer{
     position: fixed;
     bottom: 0;
@@ -54,3 +55,124 @@ footer nav a p:nth-child(2){
 }
 
 /* #endregion  */
+
+/* profile page */
+
+.headerProfile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: white;
+    border-bottom: 1px solid #eaeaea;
+}
+  
+.headerProfile nav img {
+    width: 24px;
+    height: 24px;
+}
+  
+.headerProfile h1 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    font-family: sans-serif;
+}
+  
+.headerProfile p {
+    color: #3498db;
+    font-size: 14px;
+    margin: 0;
+}
+  
+#mainProfile {
+    padding: 16px;
+    font-family: sans-serif;
+}
+  
+.profileContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+  
+.profileImage {
+    margin-right: 15px;
+}
+  
+.profileImage img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+  
+.profileName {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 4px 0;
+}
+  
+.profileLocation {
+    font-style: normal;
+    color: #666;
+    margin: 0 0 4px 0;
+    font-size: 14px;
+}
+  
+.profileSports {
+    color: #444;
+    font-size: 14px;
+    margin: 0;
+}
+  
+.doelenProfiel {
+    margin-bottom: 25px;
+}
+  
+.doelenProfiel h2 {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+  
+.buttonGoals button {
+    width: 100%;
+    padding: 12px 15px;
+    text-align: left;
+    background-color: #f5f5f5;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+  
+.statsProfiel {
+    margin-bottom: 25px;
+}
+  
+.statsProfiel h2 {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+  
+.activeProfiel {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 8px;
+}
+  
+.activeProfiel p {
+    margin: 0;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+  
+.activeProfiel p::after {
+    content: attr(data-value);
+    font-weight: bold;
+}

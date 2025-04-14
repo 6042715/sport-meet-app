@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style/main-style.css">
 </head>
 <body class="profile-header-body">
+    <span class="border"></span>
     <header class="profile-header">
         <a href="index.php"><img src="lib/icons/arrow_back.svg" alt="" class="arrow_black"></a>
         <p class="small-header-create-profile">Create a Profile</p>

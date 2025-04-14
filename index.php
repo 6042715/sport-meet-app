@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sport Meet App</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Home</title>
+    <link rel="stylesheet" href="style/main-style.css">
 </head>
 <body>
     <header></header>
     <main></main>
-    <footer></footer>
+    <?php
+    include_once("templates/footer.php");
+    ?> 
 </body>
 </html>

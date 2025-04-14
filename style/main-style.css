@@ -101,17 +101,18 @@ footer nav a p:nth-child(2){
     gap: 15px 10px;
     justify-content: center;
 
-    button { /* FIXME: class html wordt misschien niet gebruikt */
-        border: none;
-        background-color: var(--button-chat);
-        padding: 16px 14px;
-        font-size: 20px;
-        font-weight: 500;
-        width: 40%;
-        height: auto;
+}
 
-        border-radius: var(--button-radius);
-    }
+.sport-options_button { 
+    border: none;
+    background-color: var(--button-chat);
+    padding: 16px 14px;
+    font-size: 20px;
+    font-weight: 500;
+    width: 40%;
+    height: auto;
+
+    border-radius: var(--button-radius);
 }
 
 .green-button {

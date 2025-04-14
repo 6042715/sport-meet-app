@@ -15,7 +15,7 @@
     </header>
 
     <main class="create-profile-container create-profile-2">
-        <h1 class="profile-header" id="who-are-you">Tell us who you are</h1>
+        <h1 class="profile-header" id="who-are-you">Let’s get started!</h1>
         <!-- username email wachtwoord -->
         <form action="profile.php" class="create-profile" method="post">
             <div class="create-profile-input-wrap">

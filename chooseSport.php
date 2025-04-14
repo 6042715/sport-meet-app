@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Redirect or continue to next step
       
     } 
-    header('Location: profile.php'); /* FIXME: link to homepage */
+    header('Location: profile.php'); /* TODO: link to homepage */
     exit();
 }
 ?>
@@ -36,42 +36,42 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <h1 class="header-create-profile">Choose your sports</h1>
         <form class="sport-options" method="post"> 
             <label class="sport-options_label">
-                <input type="checkbox" name="sports[]" value="running" />
+                <input type="checkbox" name="sports[]" value="Running" />
                 Running
             </label>
 
             <label class="sport-options_label">
-                <input type="checkbox" name="sports[]" value="cycling" />
+                <input type="checkbox" name="sports[]" value="Cycling" />
                 Cycling
             </label>
 
             <label class="sport-options_label">
-                <input type="checkbox" name="sports[]" value="tennis" />
+                <input type="checkbox" name="sports[]" value="Tennis" />
                 Tennis
             </label>
 
             <label class="sport-options_label">
-                <input type="checkbox" name="sports[]" value="gym" />
+                <input type="checkbox" name="sports[]" value="Gym" />
                 Gym
             </label>
 
             <label class="sport-options_label">
-                <input type="checkbox" name="sports[]" value="swimming" />
+                <input type="checkbox" name="sports[]" value="Swimming" />
                 Swimming
             </label>
 
             <label class="sport-options_label">
-                <input type="checkbox" name="sports[]" value="short-walks" />
+                <input type="checkbox" name="sports[]" value="Short-walks" />
                 Short Walks
             </label>
 
             <label class="sport-options_label">
-                <input type="checkbox" name="sports[]" value="basketball" />
+                <input type="checkbox" name="sports[]" value="Basketball" />
                 Basketball
             </label>
 
             <label class="sport-options_label">
-                <input type="checkbox" name="sports[]" value="ballet" />
+                <input type="checkbox" name="sports[]" value="Ballet" />
                 Ballet
             </label>
             <button type="submit" class="green-button">Continue</button>

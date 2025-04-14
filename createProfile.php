@@ -19,15 +19,15 @@
         <form action="profile.php" class="create-profile" method="post">
             <div class="create-profile-input-wrap">
                 <label for="firstName">First Name</label>
-                <input class="form-control" type="text" name="firstName">
+                <input class="form-control" type="text" name="firstName" required>
             </div>
             <div class="create-profile-input-wrap">
                 <label for="lastName">Last Name</label>
-                <input class="form-control" type="text" name="lastName">
+                <input class="form-control" type="text" name="lastName" required>
             </div>
             <div class="create-profile-input-wrap">
                 <label for="location">Location</label>
-                <input class="form-control" type="text" name="location">
+                <input class="form-control" type="text" name="location" required>
             </div>
             <div class="create-profile-input-wrap about-me">
                 <label for="aboutme">About me</label>

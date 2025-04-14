@@ -10,9 +10,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $_SESSION['profile']['sports'] = $selectedSports;
 
         // Redirect or continue to next step
-        header('Location: profile.php'); /* FIXME: link to homepage */
-        exit();
+      
     } 
+    header('Location: profile.php'); /* FIXME: link to homepage */
+    exit();
 }
 ?>
 
@@ -24,14 +25,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <title>Home</title>
     <link rel="stylesheet" href="style/main-style.css">
 </head>
-<body class="profile-header-body">
+<body class="profile-header-body beepSport">
     
     <header class="profile-header">
         <a href="createProfile.php"><img src="lib/icons/arrow_back.svg" alt="" class="arrow_black"></a>
         <p class="small-header-create-profile">Create a Profile</p>
     </header>
 
-    <main class="create-profile-container">
+    <main class="create-profile-container aaaaa">
         <h1 class="header-create-profile">Choose your sports</h1>
         <form class="sport-options" method="post"> 
             <label class="sport-options_label">

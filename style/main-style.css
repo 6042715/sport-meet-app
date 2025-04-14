@@ -84,6 +84,10 @@ footer nav a p:nth-child(2){
     font-size: 14px;
     margin: 0;
 }
+
+#pijlRechts {
+    rotate: 180deg;
+}
   
 #mainProfile {
     padding: 16px;
@@ -175,4 +179,15 @@ footer nav a p:nth-child(2){
 .activeProfiel p::after {
     content: attr(data-value);
     font-weight: bold;
+}
+
+.evenementSign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.evenementSign a {
+    text-decoration: none;
+    cursor: pointer;
 }

@@ -9,7 +9,7 @@
 <body>
     <header class="headerProfile">
         <nav>
-            <img src="lib/icons/arrow_back.svg" alt="">
+            <a href="index.php"><img src="lib/icons/arrow_back.svg" alt="pijl naar links"></a>
         </nav>
         <h1>Profile</h1>
         <p>Edit profile</p>
@@ -18,7 +18,7 @@
     <main id="mainProfile">
         <section class="profileContainer">
           <article class="profileImage">
-            <img src="img/profielfoto.jpg" alt="Profile picture of Michael Johnson">
+            <img src="img/profielfoto.jpg" alt="Profile picture">
           </article>
 
           <article>
@@ -37,7 +37,7 @@
           </article>
 
           <article class="buttonGoals">
-            <button>Get Fit ></button>
+            <button>Get Fit <img id="pijlRechts" src="lib/icons/arrow_back.svg" alt=""></button>
           </article>
         </section>
 
@@ -50,6 +50,20 @@
             <p data-value="4">Connections</p>
             <p data-value="8">Active Days</p>
           </article>
+        </section>
+
+        <section class="statsProfiel">
+          <article>
+            <h2>Step counter</h2>
+          </article>
+
+          <article class="activeProfiel">
+            <p>You have walked ... KM today</p>
+          </article>
+        </section>
+
+        <section class="evenementSign">
+          <a href="#">sign up for evenement</a>
         </section>
     </main>
 

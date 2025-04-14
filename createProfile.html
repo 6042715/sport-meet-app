@@ -15,24 +15,32 @@
     <main class="create-profile-container create-profile-2">
         <h1 class="profile-header" id="who-are-you">Tell us who you are</h1>
         <!-- username email wachtwoord -->
-        <form action="#" class="create-profile" method="post">
-            <label for="inputText">First Name</label>
-            <input class="form-control" type="text" name="firstName">
+        <form action="profile.php" class="create-profile" method="post">
+            <div class="create-profile-input-wrap">
+                <label for="inputText">First Name</label>
+                <input class="form-control" type="text" name="firstName">
+            </div>
+            <div class="create-profile-input-wrap">
+                <label for="inputText">Last Name</label>
+                <input class="form-control" type="text" name="lastName">
+            </div>
+            <div class="create-profile-input-wrap">
+                <label for="inputText">First Name</label>
+                <input class="form-control" type="text" name="">
+            </div>
+            <div class="create-profile-input-wrap">
+                <label for="inputText">First Name</label>
+                <input class="form-control" type="text" name="">
+            </div>
+            <div class="create-profile-input-wrap about-me">
+                <label for="inputText">About me</label>
+                <textarea name="about" class="form-control"></textarea>
+            </div>
 
-            <label for="inputText">Last Name</label>
-            <input class="form-control" type="text" name="lastName">
-
-            <label for="inputText">First Name</label>
-            <input class="form-control" type="text" name="">
-            
-            <label for="inputText">First Name</label>
-            <input class="form-control" type="text" name="">
-            
-            <label for="inputText">About me</label>
-            <input class="form-control about-me" type="text" name="about">
+            <button type="submit" class="green-button">Continue</button>
         </form>
 
-        <a href="#" class="green-button">Continue</a>
     </main>
 </body>
+
 </html>

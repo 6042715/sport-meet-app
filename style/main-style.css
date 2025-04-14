@@ -144,12 +144,37 @@ footer nav a p:nth-child(2){
 }
 
 .create-profile {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    gap: 3px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    width: 100%;
+    place-items: center;
 
-  
+    label {
+        position: absolute;
+        top: -1px;
+        left: 14.9px;
+        width: 100px;
+        padding: 2px;
+        background-color: var(--background-color);
+        font-size: 17px;
+        text-align: center;
+        z-index: 1;
+    }
+
+
+}
+
+.create-profile-2 {
+    margin-top: 40px;
+}
+.create-profile-input-wrap {
+    width: 90%;
+    height: 74px;
+    position: relative;
+    display: flex;
+    place-items: center;
+
 }
 .form-control {
     box-sizing: border-box;
@@ -158,6 +183,7 @@ footer nav a p:nth-child(2){
     height: 46px;
     background-color: var(--background-color);
     padding: 0px 10px;
+    width: 100%;
 
     input:focus, &:focus, select:focus {
         box-sizing: border-box;
@@ -168,15 +194,26 @@ footer nav a p:nth-child(2){
 }   
 
 .about-me {
-    height: 90px;
+    height: 70%;
+    grid-area: 5/1/7/2;
+
+    textarea {
+        height: 80%;
+        font-size: 16px;
+        padding: 15px
+    }
+
+    label {
+        top: -5px;
+    }
 }
 
 #who-are-you {
-    align-self: flex-start;
-    margin-left: 20px;
-    font-size: 30px;
+    align-self: center;
+    font-size: 26px;
     height: 50px;
     width: auto;
+    margin-bottom: 16px;
 }
 
 
@@ -204,10 +241,7 @@ label {
     display: inline-block;
     margin-bottom: .5rem;
 }
-.form-control {
-    box-shadow: none !important;
 
-}
 
 /* #endregion  */
 

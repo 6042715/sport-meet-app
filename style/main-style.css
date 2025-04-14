@@ -12,6 +12,10 @@
     margin: 0;
     overflow-x: hidden;
 }
+
+body {
+    background-color: var(--background-color);
+}
 footer{
     position: fixed;
     bottom: 0;
@@ -38,3 +42,15 @@ footer nav a p:nth-child(2){
     font-family: sans-serif;
     margin-top: 0.3vh;
 }
+
+/* #region -------- Create Profile ------- */
+
+.profile-header {
+    
+}
+
+.arrow_black {
+    color: black;
+}
+
+/* #endregion  */

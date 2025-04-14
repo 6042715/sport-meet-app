@@ -17,12 +17,14 @@
                 <span class="icon">⚡</span>
             </div>
             
+            <!-- Welcome text -->
             <h1>Welcome to Match & Move</h1>
             
+            <!-- App description -->
             <p>Find a sport partner, join activities, and reach your goals.</p>
             
-            <!-- Get Started button -->
-            <button class="start-button">Get Started</button>
+            <!--link naar sign-in page -->
+            <a href="signin.php" class="start-button">Get Started</a>
         </div>
     </main>
 </body>

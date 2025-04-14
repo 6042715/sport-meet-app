@@ -12,7 +12,7 @@
         <p class="small-header-create-profile">Create a Profile</p>
     </header>
     <main>
-        <section class="choose-sport-container">
+        <section class="create-profile-container">
             <h1 class="header-create-profile">Choose your sports</h1>
 
             <article class="sport-options">

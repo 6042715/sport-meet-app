@@ -1,17 +1,19 @@
 
 :root {
     --main-blue: #6682ec;
-    --button-main: #8cbe7e;
-    --button-chat: #e9e5eb;
+    --button-main: #72cb73;
+    --button-chat: #e4e1e8;
     --chat-message-bg: #fbf4f7;
     --background-color: #fffafc;
+    --font: Roboto,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    --button-radius: 11px;    
 }
 
 *{
     padding: 0;
     margin: 0;
-    overflow-x: hidden;
-}
+    overflow-x: hidden;}
 
 body {
     background-color: var(--background-color);
@@ -45,16 +47,89 @@ footer nav a p:nth-child(2){
 }
 
 /* #region -------- Create Profile ------- */
-
+.profile-header-body {
+    font-family: var(--font);
+    min-height: 100vh;
+    /* margin: 0 0px; */
+    font-size: 16px;
+    line-height: 24px;
+    background-color: var(--background-color);
+}
 .profile-header {
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+    text-align: center;
+    p {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    a {
+        position: absolute;
+        left: 10px
+    }
+}
+
+.header-create-profile {
 }
 
 .arrow_black {
     color: black;
-    height: 30px;
+    height: 20px;
 }
 
+.choose-sport-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 100vh;
+    justify-content: flex-start;
+    margin-top: 150px;
+     
+    h1 {
+        margin-bottom: 22px;
+        height: 34px;
+        font-size: 26px;
+    }
+}
+
+.sport-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px 10px;
+    justify-content: center;
+
+    button { /* FIXME: class html wordt misschien niet gebruikt */
+        border: none;
+        background-color: var(--button-chat);
+        padding: 16px 14px;
+        font-size: 20px;
+        font-weight: 500;
+        width: 40%;
+        height: auto;
+
+        border-radius: var(--button-radius);
+    }
+}
+
+.green-button {
+    height: 55px;
+    width: 70%;
+    text-decoration: none;
+    color: white;
+    font-size: 23px;
+    background-color: var(--button-main);
+    border-radius: var(--button-radius);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    bottom: 50px;
+    position: absolute;
+}
 /* #endregion  */
 
 /* profile page */

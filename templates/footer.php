@@ -1,18 +1,18 @@
 <footer>
     <nav>
-        <a id="home">
+        <a id="home" href="index.php">
             <p>🏠</p>
             <p>home</p>
         </a>
-        <a id="calendar">
+        <a id="calendar" href="activiteiten.php">
             <p>📅</p>
-            <p>events</p>
+            <p>activities</p>
         </a>
-        <a id="chat">
+        <a id="chat" href="chat.php">
             <p>💬</p>
             <p>chat</p>
         </a>
-        <a id="profile">
+        <a id="profile" href="profile.php">
             <p>👤</p>
             <p>profile</p>
         </a>

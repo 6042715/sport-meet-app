@@ -90,6 +90,13 @@ if (isset($_SESSION['profile'])) {
           <article class="activeProfiel">
             <p>You have walked ... KM today</p>
           </article>
+
+          <article id="progressbar">
+            <p>Nog <span>23654</span> stappen voor de rank: <span>Diamond</span></p>
+            <progress value="76" max="100">76%</progress>
+
+            <img src="img/rank_image.png">
+          </article>
         </section>
 
         <section class="statsProfiel">

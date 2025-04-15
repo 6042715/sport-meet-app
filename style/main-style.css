@@ -38,6 +38,8 @@ footer{
     display: flex;
     border-top: 2px rgb(192, 192, 192) solid;
     position: fixed;
+    z-index: 999;
+    background-color: white;
 }
 footer nav{
     width: 100%;
@@ -90,13 +92,16 @@ footer nav a p:nth-child(2){
 #textInput{
     grid-area: textInput;
     height: fit-content;
-    min-height: 50%;
+    min-height: 0%;
     width: 90%;
     align-self: center;
     border: gray 2px solid;
     border-radius: 20px;
     font-size: large;
     font-family: sans-serif;
+    padding-top: 0.5vh;
+    padding-bottom: 1vh;
+    padding-left: 2vw; padding-right: 2vw;
 }
 #sendButton{
     grid-area: sendButton;
@@ -619,17 +624,23 @@ footer nav a p:nth-child(2){
     flex-direction: column;
     gap: 20px;
     padding: 0 20px 20px;
+    padding-bottom: 10vh;
+    margin-bottom: 20vh;
+    overflow-y: auto;
   }
   
   .activity-card {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    background-color: #f39661;
+    justify-content: center;
+    background: var(--background-gradient);
     border-radius: 12px;
     padding: 30px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.10);
     transition: transform 0.2s ease;
+    color: white;
+    margin-bottom: 3vh;
   }
   
   .activity-card:hover {
@@ -643,7 +654,7 @@ footer nav a p:nth-child(2){
   
   .activity-text p {
     font-size: 19px;
-    color: #555;
+    color: #fff1e0;
   }
   
   .activity-card img {
@@ -653,7 +664,16 @@ footer nav a p:nth-child(2){
     object-fit: cover;
     margin-left: 10px;
   }
-  
+  .activityButton{
+    width: 80%;
+    height: 4.5vh;
+    margin-top: 2vh;
+    border: none;
+    background: linear-gradient(white, rgb(225, 225, 225));
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: large;
+  }
   
 
   @media (max-width: 600px) {

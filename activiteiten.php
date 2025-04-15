@@ -22,6 +22,8 @@
           <p>Leiden</p>
         </article>
         <img src="img/hardlopers.jpg" alt="mensen die samen rennen" />
+
+        <button class="activityButton">Meedoen</button>
       </article>
 
       <article class="activity-card">
@@ -31,6 +33,8 @@
           <p>Wassenaar</p>
         </article>
         <img src="img/girlsgolf.jpeg" alt="meiden die samen golfen" />
+
+        <button class="activityButton">Meedoen</button>
       </article>
 
       <article class="activity-card">
@@ -40,6 +44,8 @@
           <p>Roelofarendsveen</p>
         </article>
         <img src="img/tennisgroep.jpeg" alt="tennis groep" />
+
+        <button class="activityButton">Meedoen</button>
       </article>
 
       

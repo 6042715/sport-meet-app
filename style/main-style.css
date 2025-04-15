@@ -37,6 +37,7 @@ footer{
     height: 10vh;
     display: flex;
     border-top: 2px rgb(192, 192, 192) solid;
+    position: fixed;
 }
 footer nav{
     width: 100%;
@@ -49,6 +50,15 @@ footer nav a{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-decoration: none;
+    transition: 200ms ease-in;
+}
+footer nav:has(a:hover) a:not(:hover) {
+    transform: scale(0.8);
+}
+
+footer nav a:hover {
+    transform: scale(1.1);
 }
 footer nav a p:nth-child(2){
     font-size: medium;
@@ -60,7 +70,7 @@ footer nav a p:nth-child(2){
     display: grid;
     grid-template-rows: 90% 10%;
     grid-template-areas: "chat" "input";
-    height: 90vh;
+    height: 80vh;
     padding-top: 5vh;
 }
 #chatSection{
@@ -93,8 +103,14 @@ footer nav a p:nth-child(2){
     height: 50%;
     padding-right: 5vw;
     align-self: center;
-    background-color: blue;
+    background: linear-gradient(-180deg,rgb(32, 81, 255) 0%, rgb(0, 47, 216) 100%);
     border-radius: 40px;
+    width: 10vw; height: 10vw;
+    color: white;
+    text-align: center;
+    font-size: 150%;
+    border: none;
+    border-radius: 20px;
 }
 .chatBubble{
     width: 60vw;

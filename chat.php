@@ -22,7 +22,7 @@
         </section>
         <form id="chatInput">
             <textarea id="textInput" rows="1"></textarea>
-            <input type="submit" id="sendButton">
+            <input type="submit" id="sendButton" value="-->">
         </form>
     </main>
     <?php

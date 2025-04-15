@@ -560,103 +560,91 @@ footer nav a p:nth-child(2){
     font-weight: bold;
 }
 
-.evenementSign {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.evenementSign a {
-    text-decoration: none;
-    cursor: pointer;
-}
-
-/* swipe pagina */
-
-body {
-    font-family: sans-serif;
-    background: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-  }
-  
-  .card-container {
-    position: relative;
-    width: 300px;
-    height: 500px;
-  }
-  
-  .card {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: white;
-    border-radius: 20px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-    overflow: hidden;
-    transition: transform 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 20px;
-  }
-  
-  .card img {
-    width: 100%;
-    height: 60%;
-    object-fit: cover;
-  }
-  
-  .card h3 {
-    margin: 10px 0 5px;
-  }
-  
-  .card p {
-    margin: 0;
-  }
-  
-  .buttons {
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-  }
-  
-  .buttons button {
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-  }
-  
-  .no {
-    background-color: #000000;
-    color: white;
-  }
-  
-  .yes {
-    background-color: #4caf50;
-    color: white;
-  }
-
-  .profile-details {
+header {
     text-align: center;
-    padding: 10px;
-    font-size: 16px;
+    padding: 20px;
   }
   
-  .profile-details h3 {
-    font-size: 20px;
+  .title {
+    font-size: 34px;
     font-weight: bold;
   }
   
-  .profile-details p {
-    font-size: 16px;
+  .activities-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20px 20px;
+  }
+  
+  .activity-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f39661;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.10);
+    transition: transform 0.2s ease;
+  }
+  
+  .activity-card:hover {
+    transform: translateY(-2px);
+  }
+  
+  .activity-text h2 {
+    font-size: 25px;
+    margin-bottom: 5px;
+  }
+  
+  .activity-text p {
+    font-size: 19px;
     color: #555;
   }
   
+  .activity-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-left: 10px;
+  }
   
+  
+
+  @media (max-width: 600px) {
+    .title {
+      font-size: 30px;
+    }
+  
+    .activity-card {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .activity-card img {
+      margin-top: 10px;
+      margin-left: 0;
+      width: 100%;
+      max-width: 100px;
+    }
+
+    .activities-section {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 0 10px 10px;
+      }
+
+      .activity-card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #f39661;
+        border-radius: 12px;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.10);
+        transition: transform 0.2s ease;
+      }
+  
+  }

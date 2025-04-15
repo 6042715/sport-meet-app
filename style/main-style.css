@@ -560,7 +560,7 @@ footer nav a p:nth-child(2){
     font-weight: bold;
 }
 
-header {
+.header-pad {
     text-align: center;
     padding: 20px;
   }
@@ -648,3 +648,490 @@ header {
       }
   
   }
+
+/* Welkom screen styles */
+
+
+/* Reset default browser margins and padding */
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/* Main container styles */
+#welcome-screen .app-container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #FF6B00, #FFB800); /* Oranje to geel gradient */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 15px;
+}
+
+/* Logo styles */
+#welcome-screen .logo {
+    background-color: white;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Icon logo styles */
+#welcome-screen .icon {
+    color: #FF6B00; /* Match the top gradient color */
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* Heading styles - welcome-screen */
+#welcome-screen h1 {
+    color: white;
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+/* Subtitle styles - welcome-screen */
+#welcome-screen p {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 50px;
+    max-width: 600px;
+    line-height: 1.5;
+}
+
+/* Button styles */
+#welcome-screen .start-button {
+    background-color: #4CAF50; /* Groene button */
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 16px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 250px;
+    max-width: 100%;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Button hover effect */
+#welcome-screen .start-button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Button active effect */
+#welcome-screen .start-button:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Media Queries for different screen sizes */
+
+/* Grote desktop schermen */
+@media screen and (min-width: 1200px) {
+    #welcome-screen .app-container {
+        padding: 60px;
+    }
+    
+    #welcome-screen .logo {
+        width: 100px;
+        height: 100px;
+    }
+    
+    #welcome-screen .icon {
+        font-size: 50px;
+    }
+    
+    #welcome-screen h1 {
+        font-size: 42px;
+    }
+    
+    #welcome-screen p {
+        font-size: 20px;
+        max-width: 700px;
+    }
+    
+    #welcome-screen .start-button {
+        width: 300px;
+        padding: 18px 50px;
+        font-size: 20px;
+    }
+}
+
+/* Tablets en kleine desktops */
+@media screen and (max-width: 991px) {
+    #welcome-screen h1 {
+        font-size: 32px;
+    }
+    
+    #welcome-screen p {
+        font-size: 17px;
+        max-width: 500px;
+    }
+}
+
+/* Mobile landscape en kleine tablets */
+@media screen and (max-width: 767px) {
+    #welcome-screen .app-container {
+        padding: 30px 15px;
+    }
+    
+    #welcome-screen .logo {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 25px;
+    }
+    
+    #welcome-screen .icon {
+        font-size: 35px;
+    }
+    
+    #welcome-screen h1 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+    
+    #welcome-screen p {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+    
+    #welcome-screen .start-button {
+        width: 220px;
+        padding: 14px 30px;
+        font-size: 16px;
+    }
+}
+
+/* Kleine mobiles */
+@media screen and (max-width: 480px) {
+    #welcome-screen .logo {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 20px;
+    }
+    
+    #welcome-screen .icon {
+        font-size: 30px;
+    }
+    
+    #welcome-screen h1 {
+        font-size: 24px;
+    }
+    
+    #welcome-screen p {
+        font-size: 15px;
+        margin-bottom: 35px;
+    }
+    
+    #welcome-screen .start-button {
+        width: 200px;
+        padding: 12px 25px;
+        font-size: 15px;
+    }
+}
+
+/* Heel kleine schermen*/
+@media screen and (max-width: 320px) {
+    #welcome-screen h1 {
+        font-size: 22px;
+    }
+    
+    #welcome-screen p {
+        font-size: 14px;
+    }
+    
+    #welcome-screen .start-button {
+        width: 180px;
+    }
+}
+
+/* Hele lange mobiles */
+@media screen and (min-height: 700px) and (max-width: 480px) {
+    #welcome-screen .app-container {
+        justify-content: center;
+    }
+}
+
+/* Sign-in page specific styles */
+
+/* Main container for sign-in */
+#signin-screen .signin-container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #FF6B00, #FFB800); /* Oranje to geel gradient */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Logo styles - same as welcome screen */
+#signin-screen .logo {
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Icon logo styles */
+#signin-screen .icon {
+    color: #FF6B00;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Heading styles */
+#signin-screen h1 {
+    color: white;
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+/* Form container */
+#signin-screen .signin-form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+/* Form group container */
+#signin-screen .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Form labels */
+#signin-screen label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+    font-size: 16px;
+}
+
+/* Form inputs */
+#signin-screen input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+/* Form input focus state */
+#signin-screen input:focus {
+    border-color: #FF6B00;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(255, 107, 0, 0.1);
+}
+
+/* Password hint text */
+#signin-screen .password-hint {
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Password options container */
+#signin-screen .password-options {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5px;
+}
+
+/* Forgot password link */
+#signin-screen .forgot-password {
+    color: #FF6B00;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+#signin-screen .forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Submit button styles */
+#signin-screen .signin-button {
+    background-color: #4CAF50; /* Groene button */
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 14px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+/* Button hover effect */
+#signin-screen .signin-button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Alternate action (login link) */
+#signin-screen .alternate-action {
+    margin-top: 25px;
+    text-align: center;
+}
+
+#signin-screen .alternate-action p {
+    color: #333;
+    font-size: 15px;
+    margin: 0;
+}
+
+#signin-screen .alternate-action a {
+    color: #FF6B00;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#signin-screen .alternate-action a:hover {
+    text-decoration: underline;
+}
+
+/* Update the color for the button to match the green button */
+.your-button-class {
+    background-color: #4CAF50; /* Green button */
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 16px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 250px;
+    max-width: 100%;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Hover effect for the button */
+.your-button-class:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Active effect for the button */
+.your-button-class:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Media Queries for different screen sizes */
+
+/* Grote desktop schermen */
+@media screen and (min-width: 1200px) {
+    #signin-screen .signin-container {
+        padding: 60px;
+    }
+    
+    #signin-screen .signin-form {
+        padding: 35px;
+    }
+}
+
+/* Tablets en kleine desktops */
+@media screen and (max-width: 991px) {
+    #signin-screen h1 {
+        font-size: 26px;
+    }
+}
+
+/* Mobile landscape en kleine tablets */
+@media screen and (max-width: 767px) {
+    #signin-screen .signin-container {
+        padding: 30px 15px;
+    }
+    
+    #signin-screen .signin-form {
+        padding: 25px;
+    }
+}
+
+/* Kleine mobiles */
+@media screen and (max-width: 480px) {
+    #signin-screen .logo {
+        width: 50px;
+        height: 50px;
+    }
+    
+    #signin-screen .icon {
+        font-size: 25px;
+    }
+    
+    #signin-screen h1 {
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+    
+    #signin-screen .signin-form {
+        padding: 20px 15px;
+    }
+    
+    #signin-screen label {
+        font-size: 15px;
+    }
+    
+    #signin-screen input {
+        padding: 10px 12px;
+        font-size: 15px;
+    }
+    
+    #signin-screen .signin-button {
+        padding: 12px 15px;
+        font-size: 16px;
+    }
+}
+
+/* Heel kleine schermen */
+@media screen and (max-width: 320px) {
+    #signin-screen h1 {
+        font-size: 22px;
+    }
+    
+    #signin-screen .form-group {
+        margin-bottom: 15px;
+    }
+}

@@ -8,7 +8,7 @@
 </head>
 
 <body>
-<header>
+<header class="header-pad">
     <h1 class="title">Activities</h1>
   </header>
 

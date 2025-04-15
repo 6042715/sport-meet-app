@@ -15,8 +15,7 @@
                 <img src="img/placeholders/profile1.png">
                 <div class="chatContent">
                     <h3 class="chatName">Jan koekepan</h3>
-                    <p class="chatText">ohhh ja, ik hou zo van sporten, hell yeah!!! boom
-                        boom boom boom boom!!!!!
+                    <p class="chatText">
                     </p>
                 </div>
             </div>

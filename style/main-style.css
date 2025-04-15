@@ -613,7 +613,7 @@ footer nav a p:nth-child(2){
     text-align: center;
     padding: 20px;
   }
-  
+/* activities page */
   .title {
     font-size: 34px;
     font-weight: bold;
@@ -633,8 +633,7 @@ footer nav a p:nth-child(2){
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background: var(--background-gradient);
+    background: linear-gradient(to bottom, #FF6B00, #FFB800); 
     border-radius: 12px;
     padding: 30px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.10);

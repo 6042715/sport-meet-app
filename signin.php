@@ -23,7 +23,7 @@
             <h1>Join Train2Connect</h1>
 
             <!-- Sign-in form -->
-            <form class="signin-form" action="chooseSport.php" method="get">
+            <form class="signin-form" action="createProfile.php" method="get">
                 <!-- Username field -->
                 <div class="form-group">
                     <label for="username">Username</label>

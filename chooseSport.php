@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Redirect or continue to next step
       
     } 
-    header('Location: profile.php'); /* TODO: link to homepage */
+    header('Location: swipe.php'); /* TODO: link to homepage */
     exit();
 }
 ?>

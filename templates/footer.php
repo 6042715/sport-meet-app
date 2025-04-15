@@ -1,6 +1,6 @@
 <footer>
     <nav>
-        <a id="home" href="index.php">
+        <a id="home" href="swipe.php">
             <p>🏠</p>
             <p>home</p>
         </a>

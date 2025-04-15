@@ -12,7 +12,7 @@
     <h1 class="title">Activities</h1>
   </header>
 
-  <main>
+  <main class="activiteiten_main">
     <section aria-label="Upcoming activities" class="activities-section">
 
       <article class="activity-card">

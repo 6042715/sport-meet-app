@@ -1,5 +1,4 @@
 <?php
-// Lijst met sportprofielen
 $profielen = [
     [
         "name" => "Alex",
@@ -27,53 +26,18 @@ $profielen = [
         "age" => 24,
         "city" => "Utrecht",
         "sport" => "Pilates",
-        "image" => "https://img.freepik.com/free-photo/young-woman-doing-yoga_23-2149180922.jpg"
+        "image" => "https://s1.r29static.com/bin/entry/311/0,0,2000,2400/720x864,85/2170607/image.webp"
     ],
     [
         "name" => "Noah",
         "age" => 31,
         "city" => "Eindhoven",
         "sport" => "Fietsen",
-        "image" => "https://img.freepik.com/free-photo/young-man-bike-riding_1303-21073.jpg"
+        "image" => "https://static.toiimg.com/photo/83890830/83890830.jpg"
     ],
-    [
-        "name" => "Olivia",
-        "age" => 27,
-        "city" => "Groningen",
-        "sport" => "Boksen",
-        "image" => "https://img.freepik.com/free-photo/young-female-boxer-training-with-punching-bag-gym_23-2148702034.jpg"
-    ],
-    [
-        "name" => "Lucas",
-        "age" => 28,
-        "city" => "Den Haag",
-        "sport" => "Zwemmen",
-        "image" => "https://img.freepik.com/free-photo/smiling-man-swimming-pool_23-2147898278.jpg"
-    ],
-    [
-        "name" => "Mila",
-        "age" => 30,
-        "city" => "Nijmegen",
-        "sport" => "Dansen",
-        "image" => "https://img.freepik.com/free-photo/young-pretty-dancer-dancing_23-2147822376.jpg"
-    ],
-    [
-        "name" => "Daan",
-        "age" => 35,
-        "city" => "Haarlem",
-        "sport" => "Voetbal",
-        "image" => "https://img.freepik.com/free-photo/handsome-football-player-posing_23-2147790584.jpg"
-    ],
-    [
-        "name" => "Isabella",
-        "age" => 25,
-        "city" => "Tilburg",
-        "sport" => "Hardlopen",
-        "image" => "https://img.freepik.com/free-photo/young-fit-woman-doing-outdoor-running-training_23-2148975297.jpg"
-    ]
+
 ];
 
-// Geef de data terug als JSON
 header('Content-Type: application/json');
 echo json_encode($profielen);
 ?>

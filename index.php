@@ -13,9 +13,6 @@
     include_once("templates/footer.php");
     ?> 
 
-    <a href="createProfile.php">createProfile</a>
-    <a href="edit-profile.php">editpf</a>
-    <a href="activiteiten.php">activiteiten</a>
-    <a href="profile.php">profile</a>
+  
 </body>
 </html> 

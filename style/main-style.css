@@ -560,16 +560,94 @@ footer nav a p:nth-child(2){
     font-weight: bold;
 }
 
-.evenementSign {
+.header-pad {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .title {
+    font-size: 34px;
+    font-weight: bold;
+  }
+  
+  .activities-section {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20px 20px;
+  }
+  
+  .activity-card {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-}
+    background-color: #f39661;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.10);
+    transition: transform 0.2s ease;
+  }
+  
+  .activity-card:hover {
+    transform: translateY(-2px);
+  }
+  
+  .activity-text h2 {
+    font-size: 25px;
+    margin-bottom: 5px;
+  }
+  
+  .activity-text p {
+    font-size: 19px;
+    color: #555;
+  }
+  
+  .activity-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-left: 10px;
+  }
+  
+  
 
-.evenementSign a {
-    text-decoration: none;
-    cursor: pointer;
-}
+  @media (max-width: 600px) {
+    .title {
+      font-size: 30px;
+    }
+  
+    .activity-card {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .activity-card img {
+      margin-top: 10px;
+      margin-left: 0;
+      width: 100%;
+      max-width: 100px;
+    }
+
+    .activities-section {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 0 10px 10px;
+      }
+
+      .activity-card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #f39661;
+        border-radius: 12px;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.10);
+        transition: transform 0.2s ease;
+      }
+  
+  }
 
 /* Welkom screen styles */
 

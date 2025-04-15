@@ -33,7 +33,7 @@ $profielen = [
         "age" => 31,
         "city" => "Eindhoven",
         "sport" => "Fietsen",
-        "image" => "https://static.toiimg.com/photo/83890830/83890830.jpg"
+        "image" => "https://t3.ftcdn.net/jpg/02/17/44/98/360_F_217449874_RiBnrBbn3MI02ub8dUk6be2cKQzLSwkk.jpg"
     ],
 
 ];

@@ -1,10 +1,17 @@
 
 :root {
     --main-blue: #6682ec;
-    --button-main: #8cbe7e;
-    --button-chat: #e9e5eb;
+    --main-blue-desktop: #7a94f5;
+    /* --main-blue: #ffa667; */
+    --button-main: #72cb73;
+    --button-chat: #e4e1e8;
     --chat-message-bg: #fbf4f7;
     --background-color: #fffafc;
+    --font: Roboto,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    --background-gradient: linear-gradient(to bottom, #FF6B00, #FFB800);
+    --button-radius: 11px;  
+    --input-focus: gray;  
 }
 
 *{
@@ -158,14 +165,274 @@ footer nav a p:nth-child(2){
     background: linear-gradient(-180deg,rgba(255, 255, 255, 1) 0%, rgba(235, 235, 235, 1) 100%);
 }
 
-/* #region -------- Create Profile ------- */
+/* #region -------- Create Profile/Choose Sport ------- */
+.profile-header-body {
+    font-family: var(--font);
+    padding: 15px;
+    font-size: 16px;
+    line-height: 24px;
+    background: var(--background-color);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    max-height: 100vh;
+    max-width: 100vw;
+}
 
-/* .profile-header {
-    
-} */
+.profile-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+    text-align: center;
+    p {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    a {
+        position: absolute;
+        left: 17px
+    }
+}
 
 .arrow_black {
     color: black;
+    height: 24px;
+}
+
+.create-profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 64px;
+     
+    h1 {
+        margin-bottom: 25px;
+        height: 34px;
+        font-size: 26px;
+    }   
+}
+
+.sport-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px 10px;
+    justify-content: center;
+
+}
+
+.sport-options_label { 
+    border: none;
+    background-color: var(--button-chat);
+    padding: 16px 14px;
+    font-size: 20px;
+    font-weight: 500;
+    width: 40%;
+    height: auto;
+    text-align: center;
+    transition: .1s ease-in;
+
+    border-radius: var(--button-radius);
+    user-select: none;
+    cursor: pointer;
+}
+
+.sport-options_label:has(input:checked) {
+    background: var(--main-blue-desktop);
+    color: white;
+    border-color: var(--main-blue-desktop);
+  }
+
+
+.sport-options_label input[type="checkbox"] {
+    display: none;
+  }
+  
+
+.green-button {
+    height: 55px;
+    width: 70%;
+    text-decoration: none;
+    color: white;
+    font-size: 23px;
+    background-color: var(--button-main);
+    border-radius: var(--button-radius);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    bottom: 50px;
+    position: absolute;
+    border: none;
+
+    user-select: none;
+    cursor: pointer;
+}
+
+.create-profile {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    width: 100%;
+    place-items: center;
+
+    label {
+        position: absolute;
+        top: -1px;
+        left: 14.9px;
+        width: 100px;
+        padding: 2px;
+        background-color: var(--background-color);
+        font-size: 17px;
+        text-align: center;
+        z-index: 1;
+    }
+
+
+}
+
+.create-profile-2 {
+    margin: 50px auto;
+    border-radius: var(--button-radius);
+}
+.create-profile-input-wrap {
+    width: 90%;
+    height: 74px;
+    position: relative;
+    display: flex;
+    place-items: center;
+
+}
+.form-control {
+    box-sizing: border-box;
+    border-radius: var(--button-radius);
+    border: 1px var(--input-focus) solid;
+    height: 46px;
+    background-color: var(--background-color);
+    padding: 0px 10px;
+    width: 100%;
+
+    input:focus, &:focus, select:focus {
+        box-sizing: border-box;
+        border: 2px var(--input-focus) solid ;
+        outline: none;
+        border-radius: var(--button-radius);
+    }
+}   
+
+.about-me {
+    height: 70%;
+    grid-area: 4/1/6/2;
+
+    textarea {
+        height: 80%;
+        font-size: 16px;
+        padding: 15px;
+        resize: none;
+    }
+
+    label {
+        top: -5px;
+    }
+}
+
+#who-are-you {
+    align-self: center;
+    font-size: 26px;
+    height: 50px;
+    width: auto;
+    margin-bottom: 16px;
+}
+
+
+
+.textOnInput label {
+    position: absolute;
+    top: -15px;
+    left: 23px;
+    padding: 2px;
+    z-index: 1;
+    font-size: 16px;
+    font-weight: 500;
+    display: inline-block;
+    margin-bottom: .5rem;
+    transition: .1s ease-in-out;
+}
+.textOnInput label:after {
+    content: " ";
+    background-color: #fff;
+    width: 100%;
+    height: 13px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media only screen and (max-width: 1023px) {
+    .sport-options_label:has(input:checked) {
+        background: var(--main-blue);
+        color: white;
+        border-color: var(--main-blue);
+      }
+}
+ @media only screen and (min-width: 1024px) {
+    
+    .profile-header-body {
+       height: 100vh;
+       width: 100vw;
+       background: var(--background-gradient);
+       background-repeat: no-repeat;
+       background-size: cover;
+    }
+
+    .small-header-create-profile {
+        font-size: 20.8px !important;
+        filter: invert(1);
+    }
+
+    .arrow_black {
+        filter: invert(1);
+    }
+    
+    .create-profile-container {
+        width: 29%;
+        margin: 30px auto;
+        background-color: var(--background-color);
+        padding: 26px 6px 36px;
+        /* margin: 10px auto; */
+        border-radius: var(--button-radius);
+    }
+
+    .aaaaa {
+        padding: 40px 20px 60px;
+    }
+
+    .green-button {
+        position: relative;
+        transition: .15s ease-in-out;
+        bottom: 0;
+
+        &:hover {
+            background-color: #45a049;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        &:active {
+            transform: translateY(1px);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
+    }
+
+    .sport-options_label:hover {
+        background-color: #d1d9f3;
+     
+    }
+    
 }
 
 /* #endregion  */
@@ -293,13 +560,91 @@ footer nav a p:nth-child(2){
     font-weight: bold;
 }
 
-.evenementSign {
+header {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .title {
+    font-size: 34px;
+    font-weight: bold;
+  }
+  
+  .activities-section {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20px 20px;
+  }
+  
+  .activity-card {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-}
+    background-color: #f39661;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.10);
+    transition: transform 0.2s ease;
+  }
+  
+  .activity-card:hover {
+    transform: translateY(-2px);
+  }
+  
+  .activity-text h2 {
+    font-size: 25px;
+    margin-bottom: 5px;
+  }
+  
+  .activity-text p {
+    font-size: 19px;
+    color: #555;
+  }
+  
+  .activity-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-left: 10px;
+  }
+  
+  
 
-.evenementSign a {
-    text-decoration: none;
-    cursor: pointer;
-}
+  @media (max-width: 600px) {
+    .title {
+      font-size: 30px;
+    }
+  
+    .activity-card {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .activity-card img {
+      margin-top: 10px;
+      margin-left: 0;
+      width: 100%;
+      max-width: 100px;
+    }
+
+    .activities-section {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 0 10px 10px;
+      }
+
+      .activity-card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #f39661;
+        border-radius: 12px;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.10);
+        transition: transform 0.2s ease;
+      }
+  
+  }

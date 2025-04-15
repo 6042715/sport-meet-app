@@ -456,7 +456,7 @@ footer nav a p:nth-child(2){
 /* profile page */
 
 .profiles {
-    min-height: 100vh;
+    min-height: 110vh;
 }
 .headerProfile {
     display: flex;

@@ -1,6 +1,18 @@
 <?php
-// Start session to access profile data
 session_start();
+
+//fixes redirect of createProfile
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    
+  $_SESSION['profile'] = [
+    'name' => $_POST['firstName'] . ' ' . $_POST['lastName'],
+    'location' => $_POST['location'],
+  ];
+
+    header('Location: chooseSport.php');
+    exit();
+}
+
 
 // Default profile data
 $profile = [

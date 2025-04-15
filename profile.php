@@ -36,10 +36,10 @@ if (isset($_SESSION['profile'])) {
     <title>Home</title>
     <link rel="stylesheet" href="style/main-style.css">
 </head>
-<body>
+<body class="profiles">
     <header class="headerProfile">
         <nav>
-            <a href="index.php"><img src="lib/icons/arrow_back.svg" alt="pijl naar links"></a>
+            <a href="swipe.php"><img src="lib/icons/arrow_back.svg" alt="pijl naar links"></a>
         </nav>
         <h1>Profile</h1>
         <a href="edit-profile.php" style="color: #3498db; font-size: 14px; text-decoration: none;">Edit profile</a>

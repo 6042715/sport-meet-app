@@ -6,7 +6,7 @@
   <title>find a sport partner</title>
   <link rel="stylesheet" href="style/main-style.css">
 </head>
-<body>
+<body class="swipe-style">
 
 <section class="card-container" id="cardContainer"></section>
 
